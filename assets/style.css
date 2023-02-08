@@ -1,0 +1,135 @@
+
+/* reset css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* inport fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+/* variaveis */
+
+:root{
+
+    --fonte_principal:'Montserrat', sans-serif;
+    --fonte_secundaria:'Fraunces', serif;   
+
+        
+    --Dark_cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+
+    --Very_dark_blue: hsl(212, 21%, 14%);
+    --Dark_grayish_blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body{
+    background-color: var(--Cream);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 500px;
+    height: 380px;
+    background-color: var(--White);
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;  
+    margin-bottom: 100px;
+}
+
+.conteudo__imagem img{
+    width: 250px;
+    height: 380px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.conteudo__texto{
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.conteudo__texto--perfume{
+
+    text-transform: uppercase;
+    font-family: var(--fonte_principal);
+    letter-spacing: 4px;
+    font-size: 10px;
+    color: var(--Dark_grayish_blue);
+}
+
+.conteudo__texto h1{
+    color: var(--Very_dark_blue);
+    font-family: var(--fonte_secundaria);   
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+    padding-top: 20px;
+}
+
+.conteudo__texto--principal {
+    color: var(--Dark_grayish_blue);
+    font-family: var(--fonte_principal);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    margin-top: 20px;
+
+}
+
+.conteudo__preco{
+    color: var(--Dark_cyan);
+    font-family: var(--fonte_secundaria);
+    padding-top: 20px; 
+    display: inline-block;  
+}
+
+
+.conteudo__preco--promocao{
+    font-size: 30px;
+    font-weight: 700;
+    border: none;
+    padding-right: 12px;
+}
+
+.conteudo__preco--normal{
+    font-size: 13px;
+    text-decoration: line-through;
+   
+}
+
+.conteudo__botão{
+
+    cursor: pointer;
+    color: var(--White);
+    background-color: var(--Dark_cyan);
+    border: none;
+    font-size: 14px;
+    padding: 10px 45px;
+    border-radius: 8px;
+    margin-top: 20px;
+   
+
+}
+
+.conteudo__botão:hover {
+    background-color: hsl(158, 38%, 23%);
+}
+
+.rodape{
+    display: inline-block;
+    font-family: var(--fonte_principal);
+    font-size: 16px;
+    color: var(--Very_dark_blue);
+    
+}
